@@ -1,0 +1,90 @@
+!URxvt settings -------------------------
+
+! special colors
+
+*.foreground:  #c3c7d1
+*.background:  #1e282c
+*.cursorColor:  #c3c7d1
+
+! black
+
+*.color0:      #073641
+*.color8:      #002b36
+
+! red
+*.color1:      #eb606b
+*.color9:      #eb606b
+
+! green
+*.color2:      #c3e88d
+*.color10:     #c3e88d
+
+! yellow
+*.color3:      #f7eb95
+*.color11:     #f7eb95
+
+! blue
+*.color4:      #6a94c0 
+*.color12:     #6a94c0 
+
+! magenta
+*.color5:      #ff2490
+*.color13:     #6c71c3
+
+! cyan
+*.color6:      #80cbc3
+*.color14:     #34434d
+
+! white
+*.color7:      #ffffff
+*.color15:     #ffffff
+
+URxvt*scrollBar:         false
+URxvt*scrollBar_right:   false
+
+URxvt*transparent:       false
+
+URxvt.font: xft:PragmataPro:pixelsize=16
+URxvt.letterSpace: 0
+
+*antialias:  false
+*autohint:   false
+
+
+!extensions
+
+
+URxvt.perl-ext-common: fullscreen,clipboard
+
+
+!keybindings
+
+URxvt.keysym.F11: perl:fullscreen:switch
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
+
+
+
+!Rofi settings -------------------------
+
+
+
+rofi.color-enabled: true
+!				  'background','border'
+rofi.color-window: #CC374244, #CC374244, #CC374244
+!		     'bg'	   'fg'		'bgalt'		'hlbg'	  'hlfg'
+rofi.color-normal: #CC374244, #bdbdbd, CC21686c, #CC59666e, #d3c2aa
+rofi.color-active: #CC374244, #b5bae1, CC21686c, #CC59666e, #b5bae1
+rofi.color-urgent: #CC374244, #e1b5ba, CC21686c, #CC59666e, #e1b5ba
+
+rofi.hide-scrollbar: true
+rofi.font: Audimat Mono 15
+rofi.separator-style: solid
+rofi.line-margin: 0
+rofi.padding: 500
+rofi.bw: 2
+rofi.width: 100
+rofi.fake-transparency: true
+rofi.opacity: 80
+rofi.columns: 2
+
